@@ -20,7 +20,7 @@ function NavbarTop() {
         </NavbarItem>
       </NavbarContent><NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          TODAY'S GAMES
+          TODAYS GAMES
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
