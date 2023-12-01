@@ -1,3 +1,4 @@
+import NavbarTop from "./components/common/NavbarTop";
 import GameInfo from "./components/games/GameInfo";
 
 async function getData() {
@@ -16,11 +17,12 @@ export default async function Page() {
   const Games = Data.games
 
   return (
-    <div>
-      <h2>TODAY GAMES</h2>
+    <div className="min-h-screen py-5">
+      <div className="container gap-8 columns-2 mx-auto">
       {Games?.map((game => (
         <GameInfo key={game.id} gameInfo={game} />
       )))}
+      </div>
     </div>
   )
 }
